@@ -9,5 +9,5 @@ def makeColabPersistent(datastoreName):
     drive.mount('/mnt/drive')
   pdir = os.path.dirname(ColabPersistence.__file__)
   dPath = "/mnt/drive/MyDrive/COLAB/Persistence/" + datastoreName
-  subprocess.check_call( ["chmod", "+x", pdir + "/makePersistent.sh"], stdout=subprocess.STDOUT)
-  subprocess.check_call([pdir + "/makePersistent.sh", dPath], stdout=subprocess.STDOUT)
+  subprocess.check_call( ["chmod", "+x", pdir + "/makePersistent.sh"])
+  subprocess.check_call([pdir + "/makePersistent.sh", dPath])
