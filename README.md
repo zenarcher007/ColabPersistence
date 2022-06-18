@@ -15,3 +15,5 @@ from ColabPersistence import persistence as cop
 cop.makeColabPersistent(ipynbname.name())  
 %cd  
 %cd /content  
+  
+TODO: Better description
